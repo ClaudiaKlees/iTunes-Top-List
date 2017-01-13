@@ -1,0 +1,159 @@
+.app-store-cta {
+    display: block;
+    width: 106px;
+    height: 23px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url(https://s.mzstatic.com/htmlResources/c152/web-storefront/images/viewinitunes_en.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.right {
+float:right;
+}
+
+.left {
+float:left;
+}
+
+.border-radius {
+    border-radius:.25em;
+}
+
+.border {
+    border:0.1em solid #DDD;
+}
+
+.item-number{
+	position:absolute;
+	display:none;
+}
+
+.media-item{
+	width:80%;
+	background-color:white;
+   -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+	border-bottom:0;
+	margin:0 auto;
+}
+
+
+    .media-item:hover {
+    width:90%;
+    }
+
+.media-item:last-child{
+    border-bottom: 0.1em solid #DDD;
+}
+
+.media-items{
+	list-style-type:none;
+	margin:0 auto;
+	padding:0;
+	margin-top:1.75em;
+}
+
+
+body {
+    font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+    background-color: #f7f8f9;
+    color: #000;
+    text-align: center;
+}
+
+html, body {
+    background: #f5f6f7 url(https://ssl.apple.com/ipod/images/gradient_texture20100901.jpg) repeat-x 0 0;
+    margin:0;
+    padding:0;
+}
+
+
+.search {
+
+	width:25em;
+    margin:0 auto;
+    margin-top:4em;
+}
+
+.search h1{
+	font-size:2em;
+	font-weight:400;
+	margin-bottom:2em;
+	margin-top:0.6em;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.media-item h2{
+	font-size:1.7em;
+	line-height: 1.5em;
+	font-weight:400;
+	color:#454545;
+}
+
+.media-item h3{
+	font-size:1.25em;
+	line-height: 1.25em;
+	font-weight:400;
+    color:#808080;
+}
+
+a .media-item h3{
+	font-size:1.25em;
+	line-height: 1.25em;
+	font-weight:400;
+}
+
+.album-art {
+    display:none;
+}
+
+
+.search input {
+  width: 90%;
+  padding: .5em;
+  font-size: 1rem;
+  color: #454545;
+  background: rgba(255,255,255,1);
+  border-radius: 4px;
+}
+
+.info {
+    display:inline-block;
+	padding:2em;
+}
+@media screen and (min-width:576px){
+	.media-item{
+		width:55%;
+        display:inline-block;
+	}
+
+	body {
+    font: 10px/16px "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	}
+
+    .media-item:hover {
+        width:60%;
+    }
+}
+
+@media screen and (min-width:1086px) {
+    .album-art {
+        height:15em;
+        width:auto;
+        display:inline-block;
+    }
+
+    .album-art img{
+        height:100%;
+        width:auto;
+    }
+
+    .search input {
+        margin-bottom:1em;
+    }
+}
+

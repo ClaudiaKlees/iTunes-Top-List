@@ -1,0 +1,25 @@
+<section class="mediaPage">
+    <!--Search Field-->
+    <div class="search">
+      <img src="https://www.apple.com/itunes/home/images/apple_music_logo_large.png"
+      alt="Apple Music Logo" id="logo"
+      onClick="window.location.reload()" />
+        <h1 class="uppercase">Top 100 Hits</h1>
+        <input ng-model="mediaFilter" placeholder="Search for Artist, Title, Genre" autofocus class="border border-radius">
+    </div>
+    <ul class="media-items">
+        <li class="media-item border border-radius cf" ng-repeat="item in medias | filter:mediaFilter | orderBy: mediaOrder:direction" ng-animate="'animate'">
+            <a href="{{item['link']['attributes']['href']}}" target="_blank">
+                <div class="album-art left">
+                    <img src="{{item['im:image'][0]['label']}}" alt="Photo of {{item['im:name']['label']}} by {{item['im:artist']['label']}}">
+                </div>
+                <div class="info">
+                    <span class="item-number">{{item['im:itemCount']['label']}}</span>
+                    <h2>{{item['im:name']['label']}}</h2>
+                    <h3>{{item['im:artist']['label']}}</h3>
+                    <div class="app-store-cta">App Store</div>
+                </div>
+             </a>
+        </li>
+    </ul>
+</section>
